@@ -1,0 +1,125 @@
+/*resetando html*/
+html, body{
+   
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background: white;
+    
+     
+  }
+  .container{
+    display:grid;
+    grid-template-columns:1fr 4fr;
+    grid-template-rows: 10vh 70vh 20vh
+  
+  }
+  
+  header{
+    background:#23232e;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: inline;
+    
+    
+  }
+  aside{
+    background: blue;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  main{
+    background: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+    
+  }
+  
+  footer{
+    background:red;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .row {
+    display: flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    
+  }
+  .card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+    
+    
+  }  
+  
+  .card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
+  .card p {
+    color: #a3a5ae;
+    font-size: 16px;
+  }
+   
+  .image {
+    float: right;
+    max-width: 64px;
+    max-height: 64px;
+  }
+  
+  
+  .green {
+     background: #fffaf0; 
+     border-left: 3px solid #00bfff;
+     float: left;
+  }
+  
+  
+  a{
+    color:#fff;
+    text-decoration:none;
+    transition:0.3s
+  }
+  a:hover{
+    opacity: 0.7;
+  }
+  
+  .logo{
+    font-size:24px;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    left: 100px;
+    position: absolute;
+    
+  }
+  nav{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    font-family:courier,arial,helvetica;
+    background:#23232e;
+    height:8vh;
+    /*position: absolute*/;
+    /*padding-left: 250px;*/
+    
+    
+  }
+  .nav-list {
+    list-style:none;
+    display:flex;
+    
+  }
+  .nav-list li{
+    letter-spacing:3px;
+    margin-left:32px;
+  } 
